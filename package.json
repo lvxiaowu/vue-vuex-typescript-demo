@@ -1,0 +1,63 @@
+{
+  "name": "vue-vuex-typescript-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.3.2",
+    "vue-property-decorator": "^6.1.0",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-e2e-cypress": "^3.1.2",
+    "@vue/cli-plugin-typescript": "^3.1.1",
+    "@vue/cli-plugin-unit-jest": "^3.1.1",
+    "@vue/cli-service": "^3.1.4",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-component": "^1.1.1",
+    "lint-staged": "^6.1.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "ts-import-plugin": "^1.5.5",
+    "ts-jest": "^22.4.6",
+    "typescript": "^3.1.6",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "vue-cli-service lint",
+      [
+        "eslint --fix",
+        "git add"
+      ]
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      [
+        "eslint --fix",
+        "git add"
+      ]
+    ]
+  }
+}
