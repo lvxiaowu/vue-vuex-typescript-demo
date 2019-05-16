@@ -8,14 +8,14 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 @Component({
   components: {
     HelloWorld
   }
 })
-class Home    extends Vue {
+class Home extends Vue {
   name: string = 'xiaowu';
 
   beforeRouteEnter(to: any, from: any, next: any) {
